@@ -5,7 +5,7 @@ import java.util.List;
 public class JavaBsics {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub------hshjj--*------
+		// TODO Auto-generated method stub--------*------
 		int myNum=5;
 		String website ="Lavan Andhavarapu";
 		char letter ='l';
