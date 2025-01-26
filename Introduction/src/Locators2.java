@@ -27,7 +27,7 @@ public class Locators2 {
 		System.out.println(driver.findElement(By.tagName("p")).getText());
 		Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
 		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+name+"," );
-		//using other way of writing locators
+		//using other way of writing locators using the text
 	    driver.findElement(By.xpath("//*[text()='Log Out']")).click();
 	    driver.close();
 
@@ -39,7 +39,8 @@ public class Locators2 {
 		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
 		String passwordText = driver.findElement(By.cssSelector("form p")).getText();
 		String[] passwordArray = passwordText.split("'");
-		String password = passwordArray[1].split("'")[0];
+		//String password = passwordArray[1].split("'")[0];
+		String password = passwordArray[1];
 		//0th index - please use temporary password
 		//1st index - rahulshettyacademy' to Login.
 		
